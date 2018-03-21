@@ -1,0 +1,17 @@
+{
+    "name": "no h",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "background": {
+        "page": "background.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://www.w3school.com.cn/*"],
+          "js": ["jquery-3.3.1.js", "main.js"]
+        }
+      ],
+      "permissions": [
+		"tabs", "<all_urls>"
+	]
+}
